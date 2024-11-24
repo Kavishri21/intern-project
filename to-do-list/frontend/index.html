@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .task-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .task-input input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .task-input button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+        .task-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .task-list .task {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .task-list .circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #28a745;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .task-list .cross {
+            color: #dc3545;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .save-button {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="task-input">
+            <input type="text" id="task-input" placeholder="Enter your task">
+            <button id="add-task">Add</button>
+        </div>
+        <ul class="task-list" id="task-list"></ul>
+        <button class="save-button" id="save-tasks">Save</button>
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -42,4 +42,4 @@ async function fetchTodos() {
 }
 
 // Call fetchTodos() when the page loads to display the existing to-do items
-document.addEventListener('DOMContentLoaded', fetchTodos);
+document.addEventListener('DOMContentLoaded', fetchTodos); 

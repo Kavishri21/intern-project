@@ -1,0 +1,133 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #333;
+}
+
+/* Container for the To-Do List */
+.container {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Input Styles */
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ffa500;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+.task-input input:focus {
+    border-color: #ff4500;
+    outline: none;
+}
+
+.task-input button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-input button:hover {
+    background: #ff4500;
+}
+
+/* Task List Styles */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.task-list li:hover {
+    transform: translateY(-3px);
+    background-color: #ffe4b2;
+}
+
+.task-list .task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-list .circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #28a745;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-list .circle:hover {
+    background: #28a745;
+    transform: scale(1.1);
+}
+
+.task-list .cross {
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.task-list .cross:hover {
+    color: #ff0000;
+    transform: rotate(90deg);
+}
+
+/* Save Button Styles */
+.save-button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background: #0056b3;
+}
